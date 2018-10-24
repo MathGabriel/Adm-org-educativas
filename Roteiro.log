@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6700 64-bit) (preloaded format=pdflatex 2018.5.13)  18 OCT 2018 18:49
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6700 64-bit) (preloaded format=pdflatex 2018.5.13)  24 OCT 2018 11:17
 entering extended mode
 **./Roteiro.tex
 (Roteiro.tex
@@ -288,97 +288,140 @@ LaTeX Info: Redefining \nameref on input line 16.
 \@outlinefile=\write3
 \openout3 = `Roteiro.out'.
 
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <14.4> on input line 19.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 19.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 24.
+(babel)             in language  on input line 38.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 26.
+(babel)             in language  on input line 38.
+ [1
+
+{C:/Users/flpin/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 28.
+(Font)              <14.4> on input line 45.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 28.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 28.
+(Font)              <7> on input line 45.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 36.
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 39.
+(babel)             in language  on input line 50.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 52.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 54.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 54.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 54.
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 61.
+
+("C:\Users\flpin\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\t1cmtt.fd"
+File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 65.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 68.
 
 ("C:\Users\flpin\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\omscmr.fd"
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 39.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 68.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 64.
+(babel)             in language  on input line 86.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 64.
+(babel)             in language  on input line 86.
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.86 	\item E
+             ducação Especial:\\ [1
 
-[1
-
-{C:/Users/flpin/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
+]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 74.
+(babel)             in language  on input line 103.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 98.
+(babel)             in language  on input line 127.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 100.
+(babel)             in language  on input line 129.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 135.
+(babel)             in language  on input line 154.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 135.
+(babel)             in language  on input line 154.
  [2]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 179.
+(babel)             in language  on input line 208.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 193.
+(babel)             in language  on input line 215.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 193.
-
-[3]
+(babel)             in language  on input line 215.
+ [3]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 195.
+(babel)             in language  on input line 224.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 205.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 209.
+(babel)             in language  on input line 234.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 209.
+(babel)             in language  on input line 262.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 209.
+(babel)             in language  on input line 273.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 273.
  [4]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 209.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 285.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 316.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 336.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 336.
+ [5]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 338.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 376.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 376.
+ [6]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 384.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 384.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 384.
+ [7]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 384.
  (Roteiro.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 209.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 209.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 384.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 384.
 Package rerunfilecheck Info: File `Roteiro.out' has not changed.
-(rerunfilecheck)             Checksum: E4B1FAC8B6683B6FD77BB7979774C770;662.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 209.
+(rerunfilecheck)             Checksum: 415C067C2CC86C2F81072C53F76B78BA;982.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 384.
  ) 
 Here is how much of TeX's memory you used:
- 5789 strings out of 492976
- 86048 string characters out of 3126751
- 182390 words of memory out of 3000000
- 9590 multiletter control sequences out of 15000+200000
- 14241 words of font info for 35 fonts, out of 3000000 for 9000
+ 5824 strings out of 492976
+ 86886 string characters out of 3126751
+ 182389 words of memory out of 3000000
+ 9611 multiletter control sequences out of 15000+200000
+ 16699 words of font info for 39 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 28i,8n,32p,210b,403s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 28i,8n,32p,210b,405s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\flpin\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\
 ecbx1200.pk> <C:\Users\flpin\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\
-ec\dpi600\ecrm1200.pk> <C:\Users\flpin\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour
+ec\dpi600\ectt1200.pk> <C:\Users\flpin\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour
 \jknappen\ec\dpi600\ecbx1440.pk> <C:\Users\flpin\AppData\Local\MiKTeX\2.9\fonts
 \pk\ljfour\jknappen\ec\dpi600\ecbx1728.pk> <C:\Users\flpin\AppData\Local\MiKTeX
 \2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1095.pk> <C:\Users\flpin\AppData\Lo
 cal\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1095.pk> <C:\Users\flpin\
-AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1440.pk> <C:\Us
-ers\flpin\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm2074.
-pk><C:/Users/flpin/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfont
-s/cm/cmsy10.pfb><C:/Users/flpin/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/p
-ublic/amsfonts/cm/cmsy8.pfb>
-Output written on Roteiro.pdf (4 pages, 103594 bytes).
+AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1200.pk> <C:\Us
+ers\flpin\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecti1200.
+pk> <C:\Users\flpin\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600
+\ecti1095.pk> <C:\Users\flpin\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen
+\ec\dpi600\ecrm1728.pk> <C:\Users\flpin\AppData\Local\MiKTeX\2.9\fonts\pk\ljfou
+r\jknappen\ec\dpi600\ecrm1440.pk> <C:\Users\flpin\AppData\Local\MiKTeX\2.9\font
+s\pk\ljfour\jknappen\ec\dpi600\ecrm2074.pk> <C:\Users\flpin\AppData\Local\MiKTe
+X\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm2488.pk><C:/Users/flpin/AppData/Lo
+cal/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/flp
+in/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
+Output written on Roteiro.pdf (8 pages, 160731 bytes).
 PDF statistics:
- 309 PDF objects out of 1000 (max. 8388607)
- 14 named destinations out of 1000 (max. 500000)
- 73 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 492 PDF objects out of 1000 (max. 8388607)
+ 21 named destinations out of 1000 (max. 500000)
+ 105 words of extra memory for PDF output out of 10000 (max. 10000000)
 
