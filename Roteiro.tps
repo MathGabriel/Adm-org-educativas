@@ -17,8 +17,8 @@ Class=LaTeXView
 Document=Roteiro.tex
 
 [Frame0_View0,0]
-TopLine=0
-Cursor=1743
+TopLine=67
+Cursor=2557
 
 [SessionInfo]
 FrameCount=1
