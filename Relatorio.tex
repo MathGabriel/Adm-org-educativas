@@ -1,0 +1,79 @@
+ \documentclass[a4paper,12pt]{article}
+
+\usepackage[brazil]{babel}
+\usepackage[latin1]{inputenc}
+\usepackage[T1]{fontenc}
+
+\usepackage{graphicx}
+\usepackage{indentfirst}
+\usepackage{hyperref}
+\usepackage[final]{pdfpages}
+
+
+\author{Ana Beatriz \and Felipe Luís Pinheiro \and Matheus Gabriel \and Tiago Brunacci \and Victor Henrique}
+\title{Relatório de saída de campo}
+%\date{ 26 de outubro de 2018}
+
+\begin{document}
+
+%\begin{titlepage}
+%\vspace*{3cm}
+%\begin{center}
+%%\Huge {Title of report} 
+%\huge {Universidade de Brasília - UnB}\\
+%\LARGE {Faculdade de Educação - FE} \\
+%\large {Departamento de Planejamento e Administração - PAD} \\
+%Administração das Organizações Educativas - 194280
+%\end{center}
+%\vspace{2cm} 
+%\begin{center} 
+%\Large {Professora Ana Maria de Albuquerque Moreira } \\[3pt]  
+%\small{\textit{Matricula FUB 1054376}}\\
+%\normalsize
+%\textit{Departamento de Planejamento e Administração} \\ 
+%\textit{Faculdade de Educação - UnB} \\ [1cm] 
+%
+%%\today
+%26 de outubro de 2018
+%\end{center}
+%\end{titlepage}
+%
+%\clearpage
+%
+%\newpage
+
+\maketitle
+
+\section{ Descrição da escola conforme roteiro do trabalho de campo}
+
+A escola em estudo é o Instituto Federal, ciência e tecnologia de Brasília (IFB) é uma instituição de educação superior, básica e profissional, pluricurricular e multicampi, especializada na oferta da educação profissional e tecnológica nas diferentes modalidades de ensino, com base na harmonia e integração entre humanidades e técnica, e ciência e tecnologia, na prática pedagógica.
+
+Para efeito da atividade visitamos o campus São Sebastião, que possui ensino médio, educação profissional, graduação e especialização profissional, porém a escola é especializada no ensino focado no mercado de trabalho, portanto, não possui um foco no ENEM.
+
+\section{Relato da entrevista com o diretor da escola sobre o tema específico em estudo pelo grupo}
+
+Para a entrevista fomos recepcionados pessoalmente pelo diretor da escola na sala dele, o qual foi respondendo as perguntas do roteiro em sequencia e mostrando dados das atividades da escola para o grupo diretamente na tela do computador, posteriormente a entrevista fomos levados para um rápido passeio pela escola, a qual o diretor mostrou algumas das inovações realizadas pela direção, tal como o ``redário'', ainda em fase de implementação, o pomar, e outras estruturas da escola.
+
+\section{Análise dos avanços e dos problemas enfrentados pela direção da escola na gestão do tema específico, estabelecendo relações com a teoria}
+
+ O tema em estudo foi a avaliação Institucional, no caso a escola por ser uma instituição de ensino superior possui uma CPA (comissão própria de avaliação), órgão responsável por realizar as avaliações institucionais que são realizadas anualmente na escola, com o objetivo de verificar os problemas e avanços da escola, porém a escola é nova tendo apenas 2 anos e meios de existência, portanto ainda não teve a oportunidade de formar a primeira turma. 
+
+Em resumo a escola não apresenta muitas dificuldades em lidar com o tema específico do trabalho, Avaliação institucional, tendo a CPA a frente da desse processo liberando a direção da escola para as atividades corriqueiras. 
+
+Quantos aos avanços, a escola está procurando aproveitar positivamente das analises realizadas pela CPA, como exemplo o diretor citou a mudança nos horário dos ônibus, a implementação da cantina, entre outras possíveis melhorias. 
+
+%Porém como toda escola do Brasil apresenta dificuldades financeiras e estruturais, principalmente com violência pública. 
+
+\appendix
+\section{Relatório CPA}
+Colocamos em anexo o último relatório da CPA disponível para analise e comparação, este relatório foi disponibilizado pelo diretor.
+
+\count255 = 1
+\loop
+  %\TeX
+	\includepdf[pages = \number\count255]{CPA.pdf}
+\ifnum\count255 < 20
+\advance\count255 by 1
+\repeat
+
+\end{document}
