@@ -1,0 +1,470 @@
+\ProvidesPackage{beamerthemeHYposter}[2012/03/09 beamerposter extension for University of Helsinki]
+\RequirePackage{ifthen}
+\RequirePackage{beamerposter}[2010/11/18]
+
+% HYposter beamer theme for producing posters with University of Helsinki visual style
+% Olli Wilkman 2012
+% Free to adapt and modify
+
+\mode<presentation>
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Set up theme options
+
+\DeclareOption{cic}{
+	\colorlet{TDK}{Unb}
+	\renewcommand{\tdknimi}{Universidade de Brasília}
+	\renewcommand{\tdknamn}{Faculdade de Educação}
+	\renewcommand{\tdkname}{Departamento de Planejamento e administração}
+	\renewcommand{\flame}{flames/as_vert_cor.jpg}
+	\renewcommand{\cloud}{flames/cloud.jpg}
+}
+
+\DeclareOption{mat}{
+	\colorlet{TDK}{Mat}
+	\renewcommand{\tdknimi}{MATEMAATTIS-LUONNONTIETEELLINEN TIEDEKUNTA}
+	\renewcommand{\tdknamn}{MATEMATISK-NATURVETENSKAPLIGA FAKULTETEN}
+	\renewcommand{\tdkname}{FACULTY OF SCIENCE}
+	\renewcommand{\flame}{flames/flame_mat.pdf}
+}
+
+\DeclareOption{hum}{
+	\colorlet{TDK}{Hum}
+	\renewcommand{\tdknimi}{HUMANISTINEN TIEDEKUNTA}
+	\renewcommand{\tdknamn}{HUMANISTISKA FAKULTETEN}
+	\renewcommand{\tdkname}{FACULTY OF ARTS}
+	\renewcommand{\flame}{flames/flame_hum.pdf}
+}
+
+\DeclareOption{teo}{
+	\colorlet{TDK}{Teo}
+	\renewcommand{\tdknimi}{TEOLOGINEN TIEDEKUNTA}
+	\renewcommand{\tdknamn}{TEOLOGISKA FAKULTETEN}
+	\renewcommand{\tdkname}{FACULTY OF THEOLOGY}
+	\renewcommand{\flame}{flames/flame_teo.pdf}
+}
+
+\DeclareOption{oik}{
+	\colorlet{TDK}{Oik}
+	\renewcommand{\tdknimi}{OIKEUSTIETEELLINEN TIEDEKUNTA}
+	\renewcommand{\tdknamn}{JURIDISKA FAKULTETEN}
+	\renewcommand{\tdkname}{FACULTY OF LAW}
+	\renewcommand{\flame}{flames/flame_oik.pdf}
+}
+
+\DeclareOption{med}{
+	\colorlet{TDK}{Med}
+	\renewcommand{\tdknimi}{L��KETIETEELLINEN TIEDEKUNTA}
+	\renewcommand{\tdknamn}{MEDICINSKA FAKULTETEN}
+	\renewcommand{\tdkname}{FACULTY OF MEDICINE}
+	\renewcommand{\flame}{flames/flame_laa.pdf}
+}
+
+\DeclareOption{val}{
+	\colorlet{TDK}{Val}
+	\renewcommand{\tdknimi}{VALTIOTIETEELLINEN TIEDEKUNTA}
+	\renewcommand{\tdknamn}{STATVETENSKAPLIGA FAKULTETEN}
+	\renewcommand{\tdkname}{FACULTY OF SOCIAL SCIENCES}
+	\renewcommand{\flame}{flames/flame_val.pdf}
+}
+
+\DeclareOption{maa}{
+	\colorlet{TDK}{Maa}
+	\renewcommand{\tdknimi}{MAATALOUS-METS�TIETEELLINEN TIEDEKUNTA}
+	\renewcommand{\tdknamn}{AGRIKULTUR-FORSTVETENSKAPLIGA FAKULTETEN}
+	\renewcommand{\tdkname}{FACULTY OF AGRICULTURE AND FORESTRY}
+	\renewcommand{\flame}{flames/flame_maa.pdf}
+}
+
+\DeclareOption{ell}{
+	\colorlet{TDK}{Ell}
+	\renewcommand{\tdknimi}{EL�INL��KETIETEELLINEN TIEDEKUNTA}
+	\renewcommand{\tdknamn}{VETERIN�RMEDICINSKA FAKULTETEN}
+	\renewcommand{\tdkname}{FACULTY OF VETERINARY MEDICINE}
+	\renewcommand{\flame}{flames/flame_ell.pdf}
+}
+
+\DeclareOption{bio}{
+	\colorlet{TDK}{Bio}
+	\renewcommand{\tdknimi}{BIO- JA YMP�RIST�TIETEELLINEN TIEDEKUNTA}
+	\renewcommand{\tdknamn}{BIO- OCH MILJ�VETENSKAPLIGA FAKULTETEN}
+	\renewcommand{\tdkname}{FACULTY OF BIOLOGICAL AND ENVIRONMENTAL SCIENCES}
+	\renewcommand{\flame}{flames/flame_bio.pdf}
+}
+
+\DeclareOption{far}{
+	\colorlet{TDK}{Far}
+	\renewcommand{\tdknimi}{FARMASIAN TIEDEKUNTA}
+	\renewcommand{\tdknamn}{FARMACEUTISKA FAKULTETEN}
+	\renewcommand{\tdkname}{FACULTY OF PHARMACY}
+	\renewcommand{\flame}{flames/flame_far.pdf}
+}
+
+\DeclareOption{kay}{
+	\colorlet{TDK}{Kay}
+	\renewcommand{\tdknimi}{K�YTT�YTYMISTIETEELLINEN TIEDEKUNTA}
+	\renewcommand{\tdknamn}{BETEENDEVETENSKAPLIGA FAKULTETEN}
+	\renewcommand{\tdkname}{FACULTY OF BEHAVIOURAL SCIENCES}
+	\renewcommand{\flame}{flames/flame_kay.pdf}
+}
+
+\DeclareOption{soc}{
+	\colorlet{TDK}{Soc}
+	\renewcommand{\tdknimi}{SVENSKA SOCIAL- OCH KOMMUNALH�GSKOLAN}
+	\renewcommand{\tdknamn}{SWEDISH SCHOOL OF SOCIAL SCIENCE}
+	\renewcommand{\tdkname}{\mbox{}}
+	\renewcommand{\flame}{flames/flame_soc.pdf}
+}
+
+\DeclareOption{ale}{
+	\colorlet{TDK}{Ale}
+	\renewcommand{\tdknimi}{ALEKSANTERI-INSTITUUTTI}
+	\renewcommand{\tdknamn}{ALEXANDERINSTITUTET}
+	\renewcommand{\tdkname}{ALEXANTERI INSTITUTE}
+}
+
+\DeclareOption{kir}{
+	\colorlet{TDK}{Kir}
+	\renewcommand{\tdknimi}{HELSINGIN YLIOPISTON KIRJASTO}
+	\renewcommand{\tdknamn}{HELSINGFORS UNIVERSITETS BIBLIOTEK}
+	\renewcommand{\tdkname}{HELSINKI UNIVERSITY LIBRARY}
+}
+
+\DeclareOption{kie}{
+	\colorlet{TDK}{Kie}
+	\renewcommand{\tdknimi}{KIELIKESKUS}
+	\renewcommand{\tdknamn}{SPR�KCENTRUM}
+	\renewcommand{\tdkname}{LANGUAGE CENTRE}
+}
+
+\DeclareOption{til}{
+	\colorlet{TDK}{Til}
+	\renewcommand{\tdknimi}{TILA- JA KIINTEIST�KESKUS}
+	\renewcommand{\tdknamn}{LOKAL- OCH FASTIGHETSCENTER}
+	\renewcommand{\tdkname}{CENTER FOR PROPERTIES AND FACILITIES}
+}
+
+\DeclareOption{rur}{
+	\colorlet{TDK}{Rur}
+	\renewcommand{\tdknimi}{RURALIA-INSTITUUTTI}
+	\renewcommand{\tdknamn}{RURALIA-INSTITUTET}
+	\renewcommand{\tdkname}{RURALIA INSTITUTE}
+}
+
+\DeclareOption{atk}{
+	\colorlet{TDK}{Atk}
+	\renewcommand{\tdknimi}{TIETOTEKNIIKKAKESKUS}
+	\renewcommand{\tdknamn}{CENTER F�R INFORMATIONSTEKNOLOGI}
+	\renewcommand{\tdkname}{CERTER FOR INTERMATION TECHNOLOGY}
+}
+
+\DeclareOption{kol}{
+	\colorlet{TDK}{Kol}
+	\renewcommand{\tdknimi}{TUTKIJAKOLLEGIUM}
+	\renewcommand{\tdknamn}{FORSKARKOLLEGIET}
+	\renewcommand{\tdkname}{HELSINKI COLLEGIUM FOR ADVANCED STUDIES}
+}
+
+\DeclareOption{avo}{
+	\colorlet{TDK}{Avo}
+	\renewcommand{\tdknimi}{AVOIN YLIOPISTO}
+	\renewcommand{\tdknamn}{�PPNA UNIVERSITETET}
+	\renewcommand{\tdkname}{OPEN UNIVERSITY}
+}
+
+\DeclareOption{neu}{
+	\colorlet{TDK}{Neu}
+	\renewcommand{\tdknimi}{NEUROTIETEEN TUTKIMUSKESKUS}
+	\renewcommand{\tdknamn}{CENTRUM F�R NEUROVETENSKAP}
+	\renewcommand{\tdkname}{NEUROSCIENCE CENTER}
+}
+
+\DeclareOption{biot}{
+	\colorlet{TDK}{Biot}
+	\renewcommand{\tdknimi}{BIOTEKNIIKAN INSTITUUTTI}
+	\renewcommand{\tdknamn}{INTITUTET F�R BIOTEKNOLOGI}
+	\renewcommand{\tdkname}{INSTITUTE OF BIOTECHNOLOGY}
+}
+
+\DeclareOption{koe}{
+	\colorlet{TDK}{Koe}
+	\renewcommand{\tdknimi}{KOE-EL�INKESKUS}
+	\renewcommand{\tdknamn}{F�RS�KDJURSENHETEN}
+	\renewcommand{\tdkname}{LABORATORY ANIMAL CENTRE}
+}
+
+\DeclareOption{pal}{
+	\colorlet{TDK}{Pal}
+	\renewcommand{\tdknimi}{KOULUTUS- JA KEHITT�MISKESKUS PALMENIA}
+	\renewcommand{\tdknamn}{UTBILDNINGS- OCH UTVECKLINGSCENTRET PALMENIA}
+	\renewcommand{\tdkname}{PALMENIA CENTRE FOR CONTINUING EDUCATION}
+}
+
+\DeclareOption{twocolumn}{
+	\renewcommand{\insertcolumnwidth}{0.4451\paperwidth}
+}
+
+\DeclareOption{threecolumn}{
+	\renewcommand{\insertcolumnwidth}{0.294\paperwidth}
+}
+
+\DeclareOption{fourcolumn}{
+	\renewcommand{\insertcolumnwidth}{0.22\paperwidth}
+}
+
+\selectcolormodel{rgb}
+
+\definecolor{grey55}{RGB}{0, 51, 102}  %  title grey
+\definecolor{Unb}{RGB}{0, 102, 51}  %  Universidade de Brasília
+\definecolor{Mat}{RGB}{252, 163, 17}  %  matemaattis-luonnontieteellinen
+\definecolor{Hum}{RGB}{58, 111, 196}  %  humanistinen
+\definecolor{Teo}{RGB}{146, 88, 200}  %  teologinen
+\definecolor{Oik}{RGB}{140, 0, 50}  %  oikis
+\definecolor{Med}{RGB}{0, 163, 154}  %  l��kis
+\definecolor{Val}{RGB}{229, 5, 58}  %  valtsika
+\definecolor{Maa}{RGB}{0, 176, 140}  %  lehm�- ja meht�tieteellinen
+\definecolor{Ell}{RGB}{0, 158, 96}  %  el�inl��kis
+\definecolor{Bio}{RGB}{91, 191, 33}  %  bio- ja ymp�rist�
+\definecolor{Far}{RGB}{0, 189, 157}  %  farmasia
+\definecolor{Kay}{RGB}{252, 209, 22}  %  k�yttis
+\definecolor{Soc}{RGB}{230, 51, 117}  %  sockom
+\definecolor{Kie}{RGB}{233, 29, 85}  %  kielikeskus
+\definecolor{Koe}{RGB}{70, 148, 157}  %  koe-el�in
+\definecolor{Avo}{RGB}{237, 160, 79}  %  avoin
+\definecolor{Ale}{RGB}{37, 110, 199}  %  aleksanteri-instituutti
+\definecolor{Biot}{RGB}{155, 111, 168}  %  biotiede-instituutti
+\definecolor{Neu}{RGB}{147, 149, 179}  %  neurotiedeinstituutti
+\definecolor{Pal}{RGB}{255, 204, 73}  %  palmenia
+\definecolor{Kol}{RGB}{227, 147, 4}  %  tutkijakollegium
+\definecolor{Rur}{RGB}{142, 172, 125}  %  ruralia
+\definecolor{Atk}{RGB}{21, 190, 240}  %  atk-osasto
+\definecolor{Til}{RGB}{94, 160, 63}  %  tilakeskus
+\definecolor{Kir}{RGB}{163, 175, 7}  %  kirjasto
+
+\newcommand{\flame}{flames/flame_mat.pdf}
+\newcommand{\cloud}{flames/cloud.pdf}
+\newcommand{\tdknimi}{\mbox{}}
+\newcommand{\tdknamn}{\mbox{}}
+\newcommand{\tdkname}{\mbox{}}
+\colorlet{TDK}{black}
+
+\newcommand{\titlestart}[1]{\newcommand{\inserttitlestart}{#1}}
+\newcommand{\titleend}[1]{\newcommand{\inserttitleend}{#1}}
+
+\newcommand{\insertleftcorner}{}
+\newcommand{\leftcorner}[1]{\renewcommand{\insertleftcorner}{#1}}
+
+\newcommand{\inserttitlesize}{\veryHuge}
+\newcommand{\titlesize}[1]{\renewcommand{\inserttitlesize}{#1}}
+
+\title{\inserttitlestart~\inserttitleend}
+
+% Boolean which tells whether there is an open 'block' environment
+\newboolean{inblock}
+\setboolean{inblock}{false}
+
+\newcommand{\insertcolumnwidth}{0.290\paperwidth}
+
+% Command to start a new column, ending open block if one exists
+\newcommand{\newcolumn}{\ifthenelse{\boolean{inblock}}{\end{block}}{}\column{\insertcolumnwidth}}
+
+% Set up all environments so the user doesn't have to
+\newenvironment{poster}
+{
+\begin{frame}[t, fragile, environment=poster]
+\begin{columns}[T]\column{0.05\paperwidth}
+}
+{
+\ifthenelse{\boolean{inblock}}{\end{block}}{}
+\column{0.05\paperwidth}\end{columns} 
+\end{frame} 
+}
+
+% Command to start a new block, ending open block if one exists
+\renewcommand{\section}[1]{%
+\ifthenelse{\boolean{inblock}}{\end{block}}{}
+\setboolean{inblock}{true}
+\begin{block}{#1}
+}
+
+% Process options given to the package
+\ProcessOptions\relax
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% headline colors and fonts
+\setbeamercolor{headline}{fg=black,bg=white}
+\setbeamercolor{title coloured}{fg=TDK}
+\setbeamercolor{title grey}{fg=grey55,bg=white}
+\setbeamercolor{author in headline}{fg=black}
+
+\setbeamercolor{institute in footline}{fg=TDK}
+\setbeamercolor{logo in headline}{fg=black,bg=white}
+
+\setbeamercolor{frame title}{fg=TDK,bg=white}
+
+% lines
+%\setbeamercolor{upper separation line head}{fg=ta2orange}
+\setbeamercolor{separation line}{bg=black}
+
+% footline colors and fonts
+\setbeamercolor{footline}{fg=black,bg=white}
+\setbeamerfont{footline}{size=\normalsize}
+
+% poster background, body colors, and fonts
+\setbeamercolor*{normal text}{fg=black,bg=white}
+
+% block environment
+\setbeamercolor*{block body}{bg=white,fg=black}
+\setbeamercolor*{block title}{fg=TDK,bg=white}
+\setbeamerfont{block title}{size=\LARGE,series=\bf}
+
+% example environment
+\setbeamercolor*{example title}{fg=TDK,bg=white}
+\setbeamerfont{example title}{size=\large,series=\bf}
+
+\setbeamercolor{alerted text}{fg=TDK}
+
+\setbeamercolor{faculty title}{fg=grey55,bg=white}
+
+\setbeamertemplate{itemize items}[triangle]
+\setbeamercolor{itemize item}{fg=TDK,bg=white}
+\setbeamercolor{enumerate item}{fg=TDK,bg=white}
+\setbeamercolor{description item}{fg=TDK,bg=white}
+
+\setbeamercolor{caption name}{fg=TDK,bg=white}
+\setbeamertemplate{caption}[numbered]
+
+\setbeamertemplate{navigation symbols}{}  % no navigation on a poster
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Setting up a text block
+\setbeamertemplate{block begin}{
+	\vskip3ex%
+	\begin{beamercolorbox}[ht=0ex,dp=1ex,center,rounded=false,shadow=false,leftskip=0ex,rightskip=0pt plus 4em, colsep*=.75ex]{block title}%
+		\usebeamerfont*{block title}\MakeUppercase{\insertblocktitle}
+	\end{beamercolorbox}%
+	{\ifbeamercolorempty[bg]{block body}{}{\nointerlineskip\vskip-0.5pt}}%
+	\usebeamerfont{block body}%
+	\begin{beamercolorbox}[rounded=false,shadow=false,leftskip=0cm,rightskip=0pt plus 4em,colsep*=.75ex,sep=0ex,vmode]{block body}%
+	\setlength{\parskip}{1.5ex}%
+	\ifbeamercolorempty[bg]{block body}{\vskip-.25ex}{\vskip-.75ex}%
+}
+
+\setbeamertemplate{block end}{
+  \end{beamercolorbox}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% This is the title part
+\setbeamertemplate{headline}{%
+\leavevmode%
+
+\begin{beamercolorbox}[wd=\paperwidth]{title and author}
+\begin{columns}{b}
+	\begin{column}[b]{.05\paperwidth} % filler
+	\end{column}
+
+	% Typeset the title part differently based on orientation, this is a slightly
+	% quick hack, needs refinement
+	\if@beamerposter@portrait
+
+	% TITLE
+	\begin{column}[b]{0.6\paperwidth}
+		\vskip5ex
+		\includegraphics[width=0.125\paperwidth]{\flame}\\ 
+		\vskip3ex
+		\raggedright
+		\usebeamercolor{title coloured}{\color{fg}\inserttitlesize{\MakeUppercase{\inserttitlestart}}}\\
+		\vspace{2ex}
+		\usebeamercolor{title grey}{\color{fg}\inserttitlesize{\MakeUppercase{\inserttitleend}}}
+	\end{column}
+
+	% AUTHOR LIST
+	\begin{column}[b]{0.3\paperwidth}
+	%\includegraphics[width=0.2\paperwidth]{\cloud}\\
+	%\vskip7ex
+		\raggedright
+		\usebeamercolor{author in headline}{\color{fg}\normalsize{\insertauthor}}
+		\vskip5ex
+		\usebeamercolor{author in headline}{\color{fg}\footnotesize{\insertinstitute}}
+	\end{column}
+
+
+	% If orientation is landscape, do this:
+	\else
+
+	% TITLE
+	\begin{column}[b]{0.13\paperwidth}
+		\vskip5ex
+		\includegraphics[width=0.1\paperwidth]{\flame}\\
+	\end{column}
+
+	\begin{column}[b]{0.47\paperwidth}
+		\raggedright
+		\usebeamercolor{title coloured}{\color{fg}\inserttitlesize{\MakeUppercase{\inserttitlestart}}}\\
+		\vspace{2ex}
+		\usebeamercolor{title grey}{\color{fg}\inserttitlesize{\MakeUppercase{\inserttitleend}}}
+	\end{column}
+
+	% AUTHOR LIST
+	\begin{column}[b]{0.3\paperwidth}
+		\raggedright
+		\usebeamercolor{author in headline}{\color{fg}\normalsize{\insertauthor}}
+		\vskip5ex
+		\usebeamercolor{author in headline}{\color{fg}\footnotesize{\insertinstitute}}
+	\end{column}
+	\fi
+
+	\begin{column}{.05\paperwidth} % filler
+	\end{column}
+\end{columns}
+\end{beamercolorbox}
+
+\vskip3ex
+  \begin{beamercolorbox}[wd=\paperwidth]{line}
+\hskip0.05\paperwidth\rule{0.90\paperwidth}{2pt}
+  \end{beamercolorbox}
+%\vskip5ex
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%Apaguei este comando de footline
+\setbeamertemplate{footline}{  
+  \leavevmode%
+  \begin{beamercolorbox}[ht=6ex, wd=\paperwidth]{footline}
+    \begin{columns}[b]
+      \begin{column}[b]{0.05\paperwidth}
+      \end{column}
+      \begin{column}[b]{.20\paperwidth}
+      \insertleftcorner
+      \end{column}
+      \begin{column}[b]{.70\paperwidth}
+        \raggedleft
+        \usebeamercolor{title grey}{\color{fg}\footnotesize{  }\\[1ex]}
+        \usebeamercolor{title grey}{\color{fg}\footnotesize{  }\\[1ex]}
+        \usebeamercolor{title grey}{\color{fg}\footnotesize{  }\\[1ex]}     
+        \vskip1ex
+        \usebeamercolor{institute in footline}{\color{fg}\footnotesize{\tdknimi}\\[1ex]}
+        \usebeamercolor{institute in footline}{\color{fg}\footnotesize{\tdknamn}\\[1ex]}
+        \usebeamercolor{institute in footline}{\color{fg}\footnotesize{\tdkname}\\[1ex]}
+      \end{column}
+
+      \begin{column}{.05\paperwidth}
+      \end{column}
+    \end{columns}
+  \end{beamercolorbox}
+  \vskip2ex%
+}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\mode<all>
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-PDF-mode: t
+%%% TeX-master: "poster"
+%%% End: 
