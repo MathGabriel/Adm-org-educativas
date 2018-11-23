@@ -16,6 +16,9 @@
 
 \usepackage[orientation=portrait,size=a0,scale=1.4]{beamerposter}
 
+\usepackage{subcaption}
+\usepackage{graphicx}
+
 
 % STEP 3:
 % Change colours by setting \usetheme[<id>, twocolumn]{HYposter}.
@@ -57,7 +60,7 @@
 %\author{First Author$^1$, \\ Second Author$^2$}
 %\institute{$^1$Some Institute, \url{email.address@institute}, \\ $^2$Another Institute}
 
-\author{A. Beatriz \\ F.L. Pinheiro \\ M. Gabriel \\ T. Brunacci \\ V. Henrique}
+\author{A. Beatriz ~ F.L. Pinheiro ~ M. Gabriel ~ T. Brunacci ~ V. Henrique}
 %\institute{Departamento de Planejamento e Administração - PAD \url{http://www.fe.unb.br/}}
 
 
@@ -79,7 +82,7 @@ A avaliação institucional é um processo de pesquisa e de comunicação que vi
 Esse processo objetiva identificar fatores que interferem positiva ou negativamente no desempenho da Instituição, fornecendo subsídios para a compreensão da realidade institucional, favorecendo as gestões acadêmica e administrativa.
 
 \begin{figure}%
-\centerline{\includegraphics[width=.8\columnwidth]{cloud}}
+\centerline{\includegraphics[width=.3\columnwidth]{cloud}}
 \caption{A partir de 2004, a Avaliação Institucional passou a ser uma exigência do Governo Federal, por meio da Lei nº 10.861, de 14/04/04, que implantou o Sistema Nacional de Avaliação da Educação Superior – SINAES.}%
 %\label{}%
 \end{figure}
@@ -103,7 +106,19 @@ A autoavaliação compõem-se dos seguintes processos:
 	\item Coordenação e Articulação da Avaliação Institucional / CPA / SINAES.
 \end{itemize}
 
-
+\begin{figure}%
+\begin{subfigure}{\textwidth}
+\centering
+\includegraphics[width=.45\columnwidth]{alunos}
+\includegraphics[width=.45\columnwidth]{oferta}
+\end{subfigure}
+\begin{subfigure}{\textwidth}
+\centering
+\includegraphics[width=.45\columnwidth]{tipo}
+\includegraphics[width=.45\columnwidth]{cursos}
+\end{subfigure}
+\caption{Exemplo de dados coletados durante uma avaliação Institucional}
+\end{figure}
 
 % Second column
 \newcolumn
@@ -145,24 +160,19 @@ Os resultados da avaliação institucional serão divulgados por meio de relató
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+\begin{figure}%
+\begin{subfigure}{\textwidth}
+\centering
+\includegraphics[width=.45\columnwidth]{evasao}
+\includegraphics[width=.45\columnwidth]{conclusao}
+\end{subfigure}
+\begin{subfigure}{\textwidth}
+\centering
+\includegraphics[width=.45\columnwidth]{retencao}
+\includegraphics[width=.45\columnwidth]{reprovacao}
+\end{subfigure}
+\caption{Exemplo de dados coletados durante uma avaliação Institucional}
+\end{figure}
 
 %
 %\bibliographystyle{abbrv}

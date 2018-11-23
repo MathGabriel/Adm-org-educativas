@@ -17,8 +17,8 @@ Class=LaTeXView
 Document=projeto.tex
 
 [Frame0_View0,0]
-TopLine=65
-Cursor=3631
+TopLine=110
+Cursor=4832
 
 [Frame1]
 Flags=0
